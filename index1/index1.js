@@ -1,18 +1,18 @@
 const input = document.getElementById('userinput');
 const button = document.getElementById('transform');
-const firstname = document.getElementById('firstname');
-const lastname = document.getElementById('lastname');
-const middlename = document.getElementById('patronymic');
+const firstName = document.getElementById('firstname');
+const lastName = document.getElementById('lastname');
+const middleName = document.getElementById('patronymic');
 
 button.addEventListener ('click', function() {
     fio = input.value;
     const clearfio = fio.trim();
     const fioToLowerCase = clearfio.ToLowerCase();
-    const newfio = fioToLowerCase.split(' ');
+    const newFio = fioToLowerCase.split(' ');
 
-    const surname = newfio[0];
+    const surname = newFio[0];
     const newSurname = surname.charAt(0).ToUpperCase() + surname.slice(1);
-    lastname.value = newSurname;
+    lastName.value = newSurname;
 
     const userName = newFio[1];
 	const newUserName = userName.charAt(0).toUpperCase() + userName.slice(1);
